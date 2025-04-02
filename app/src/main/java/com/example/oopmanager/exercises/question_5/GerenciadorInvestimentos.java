@@ -6,7 +6,7 @@ import java.util.List;
 public class GerenciadorInvestimentos {
     private List<IInvestimentos> investimentos;
 
-    public GerenciadorInvestimentos(List<IInvestimentos> investimentos) {
+    public GerenciadorInvestimentos() {
         this.investimentos = new ArrayList<>();
     }
 

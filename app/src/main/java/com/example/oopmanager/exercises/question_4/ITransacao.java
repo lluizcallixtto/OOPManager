@@ -7,5 +7,6 @@ public interface ITransacao {
   String getDescricao();
   Date getData();
   String getTipo();
+  String obterDetalhes();
 
 }

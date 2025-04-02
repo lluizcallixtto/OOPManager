@@ -31,4 +31,9 @@ public class Despesa implements ITransacao {
     public String getTipo() {
         return "Despesa";
     }
+
+    @Override
+    public String obterDetalhes() {
+        return "Receita Valor: " + valor + "Descrição: " + descricao + "Data: " + data;
+    }
 }

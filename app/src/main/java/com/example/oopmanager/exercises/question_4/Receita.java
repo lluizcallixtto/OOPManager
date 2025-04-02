@@ -32,4 +32,9 @@ public class Receita implements ITransacao{
     public String getTipo() {
         return "Receita";
     }
+
+    @Override
+    public String obterDetalhes() {
+        return "Receita Valor: " + valor + "Descrição: " + descricao + "Data: " + data;
+    }
 }

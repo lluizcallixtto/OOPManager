@@ -1,12 +1,16 @@
 package com.example.oopmanager;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.oopmanager.exercises.question_3.ContatoPessoal;
+import com.example.oopmanager.exercises.question_3.ContatoProfissional;
 
 public class ContatosActivity extends AppCompatActivity {
 
@@ -20,5 +24,14 @@ public class ContatosActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        TextView textView = findViewById(R.id.textViewContatos);
+
+        ContatoPessoal contato1 = new ContatoPessoal("Luiz", "(81) 9 9561-1521", "leac.calixto@gmail.com", "Dudu");
+        ContatoProfissional contato2 = new ContatoProfissional("Luiz", "(81) 9 9561-1521","leac.calixto@gmail.com","Meta");
+
+        String info = contato1.obterDetalhes() + "\n" + contato2.obterDetalhes();
+
+        textView.setText(info);
     }
 }
