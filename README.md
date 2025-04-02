@@ -77,7 +77,7 @@ O projeto segue uma estrutura organizada, separando os arquivos por funcionalida
 ## 🏗️ Como Executar o Projeto
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/lluizcallixtto/OOPManager.git
    ```
 2. Abra o **Android Studio** e importe o projeto.
 3. Construa e execute a aplicação no **emulador** ou **dispositivo físico**.
